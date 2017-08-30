@@ -194,7 +194,7 @@ public class Parser {
         JSONObject allies = (JSONObject) hash.get("alliances");
         if(allies != null) {
             JSONObject blue = (JSONObject) allies.get("blue");
-            JSONObject red = (JSONObject) allies.get("blue");
+            JSONObject red = (JSONObject) allies.get("red");
             MatchAlliance redAlly = new MatchAlliance();
             MatchAlliance blueAlly = new MatchAlliance();
             redAlly.setScore(Utils.cleanLong(red.get("score")));
@@ -231,7 +231,7 @@ public class Parser {
         JSONObject allies = (JSONObject) hash.get("alliances");
         if(allies != null) {
             JSONObject blue = (JSONObject) allies.get("blue");
-            JSONObject red = (JSONObject) allies.get("blue");
+            JSONObject red = (JSONObject) allies.get("red");
             MatchAlliance redAlly = new MatchAlliance();
             MatchAlliance blueAlly = new MatchAlliance();
             redAlly.setScore(Utils.cleanLong(red.get("score")));
